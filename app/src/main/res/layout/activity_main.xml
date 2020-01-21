@@ -11,7 +11,7 @@
 
     <TextView
         android:id="@+id/mainHeading"
-        android:layout_width="418dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="#1A237E"
@@ -26,13 +26,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#FFFF"
-        android:layout_weight="1.5"
+        android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/userLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mainHeading"
         app:layout_constraintVertical_bias="0.541"
+        android:layout_marginTop="10dp"
         app:srcCompat="@drawable/loc12" />
 
     <EditText
@@ -40,11 +41,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginLeft="0sp"
-        android:layout_marginRight="0sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:ems="10"
         android:hint="Enter username"
         android:inputType="text"
+
         />
 
     <EditText
@@ -55,18 +57,31 @@
         android:ems="10"
         android:hint="Enter password"
         android:inputType="textPassword"
-         />
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
 
-    <Button
-        android:id="@+id/loginButton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Log in"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:textSize="18sp"
-         />
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/nextPage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="LOG IN"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:textSize="22sp"
+            android:background="#1A237E"
+            android:textColor="#FFFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/dontAcc"
@@ -82,10 +97,11 @@
         android:id="@+id/signupLink"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:gravity="center|center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
         android:text="Sign Up"
         android:textSize="18sp"
+        android:paddingBottom="50dp"
          />
 
 
