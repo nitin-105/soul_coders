@@ -1,92 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FEFEFE">
-
+    android:background="#FEFEFE"
+    android:weightSum="7"
+    tools:context=".MainActivity">
     <TextView
         android:id="@+id/mainHeading"
-        android:layout_width="418dp"
-        android:layout_height="63dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:background="#1A237E"
         android:gravity="center|center_horizontal|center_vertical"
         android:text="JAN DHAN DARSHAK"
         android:textColor="#FFFF"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
 
     <EditText
         android:id="@+id/newName"
-        android:layout_width="328dp"
-        android:layout_height="65dp"
-        android:layout_marginBottom="412dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:ems="10"
         android:hint="Enter your Name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainHeading"
-        app:layout_constraintVertical_bias="0.329" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
 
     <EditText
         android:id="@+id/newUserid"
-        android:layout_width="328dp"
-        android:layout_height="69dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:ems="10"
         android:hint="Create Userid"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newName"
-        app:layout_constraintVertical_bias="0.067" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
 
     <EditText
         android:id="@+id/newPassword"
-        android:layout_width="328dp"
-        android:layout_height="73dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:ems="10"
         android:hint="Create Password"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newUserid"
-        app:layout_constraintVertical_bias="0.103" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
 
     <EditText
         android:id="@+id/confirmPasswprd"
-        android:layout_width="323dp"
-        android:layout_height="66dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:ems="10"
         android:hint="Confirm Password"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newPassword"
-        app:layout_constraintVertical_bias="0.148" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:weightSum="4"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="horizontal">
 
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:text="Select no of Banks"
+        android:textColor="#808080"
+        android:paddingLeft="5dp"
+        android:textSize="18sp" />
     <Spinner
         android:id="@+id/noOfbanks"
-        android:layout_width="324dp"
-        android:layout_height="58dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPasswprd"
-        app:layout_constraintVertical_bias="0.284" />
+         />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/nextPage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Next"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:textSize="22sp"
+        android:background="#1A237E"
+        android:textColor="#FFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    </LinearLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
